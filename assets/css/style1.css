@@ -4,6 +4,17 @@
     - Use the 'Lato' font family at 18px throughout the body of the document
     - cover background with the "map-bg.jpg" image in the images directory. 
 */
+    
+   
+
+body {
+    font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  background-image:url(../images/map-bg.jpg);
+}
 
 nav {
     font-family: sans-serif;
@@ -27,9 +38,20 @@ nav {
         - Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. 
 */
 
+header h1 {
+    font-family: 'Supermercado One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Supermercado One Regular'), local('SupermercadoOne-Regular'), url(https://fonts.gstatic.com/s/supermercadoone/v10/OpNXnpQWg8jc_xps_Gi14kVVEXOn20H9MQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-size: 45px;
+    color: #5d4037;
+}
+
 #menu {
     columns: 400px 2;
     column-gap: 100px;
+    column-rule: 2px dashed rosybrown;
 }
 
 section {
@@ -44,13 +66,24 @@ h2 {
     Add a CSS ruleset targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
+
 */
+
+h2 {
+    font-variant: small-caps;
+    color: #6d4c41;
+}
 
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
         - Set the font size to 20px
         - Make the font bold
 */
+
+dt {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 dd {
     margin: 0 0 12px 0;
@@ -70,6 +103,8 @@ dd {
 .price {
     order: 2;
     padding-left: 10px;
+    font-size: large;
+    color: firebrick;
 }
 
 address {
@@ -80,3 +115,7 @@ address {
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
 */
+
+footer {
+    border: 2px dashed rosybrown;
+}
